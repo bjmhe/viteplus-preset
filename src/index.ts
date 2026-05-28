@@ -21,6 +21,7 @@ export function lib(
           enabled: true,
           profile: "esm-only",
           module: attw,
+          level: "warn",
         },
         deps: { onlyBundle: inlineDeps },
         dts: {
