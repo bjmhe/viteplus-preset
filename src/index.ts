@@ -1,9 +1,9 @@
 import * as attw from "@arethetypeswrong/core";
 import * as publint from "publint";
 import * as publintUtils from "publint/utils";
+import type { TsdownInputOption } from "tsdown";
 import ApiSnapshot from "tsnapi/rolldown";
 import { mergeConfig, type UserConfig } from "vite-plus";
-import type { TsdownInputOption } from "tsdown";
 
 export interface LibOptions {
   entry?: "index" | "shallow" | "all" | Exclude<TsdownInputOption, string>;

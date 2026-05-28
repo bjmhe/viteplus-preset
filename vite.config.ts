@@ -1,3 +1,3 @@
-import { nodeLib } from "./dist/index.mjs";
+import { nodeLib } from "viteplus-preset-bjmhe";
 
 export default nodeLib();
