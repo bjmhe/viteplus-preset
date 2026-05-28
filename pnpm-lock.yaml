@@ -43,9 +43,6 @@ importers:
       typescript:
         specifier: ^6.0.3
         version: 6.0.3
-      viteplus-preset-bjmhe:
-        specifier: ^0.1.1
-        version: 0.1.1(@arethetypeswrong/core@0.18.2)(publint@0.3.21)(tsdown@0.22.0(@arethetypeswrong/core@0.18.2)(@typescript/native-preview@7.0.0-dev.20260509.2)(publint@0.3.21)(typescript@6.0.3)(unplugin-unused@0.5.7))(tsnapi@0.3.3)(unplugin-unused@0.5.7)(vite-plus@0.1.22(@arethetypeswrong/core@0.18.2)(@types/node@25.9.1)(jiti@2.7.0)(publint@0.3.21)(typescript@6.0.3)(unplugin-unused@0.5.7)(vite@8.0.14(@types/node@25.9.1)(jiti@2.7.0)(yaml@2.9.0))(yaml@2.9.0))
 
 packages:
 
@@ -1324,16 +1321,6 @@ packages:
       yaml:
         optional: true
 
-  viteplus-preset-bjmhe@0.1.1:
-    resolution: {integrity: sha512-Ywnp3wvVo6JUQ19PVPiOWPDylsKswXJVx/R6oq7gHLWiy+4/zO7Z58DMIuu6Q6/UZsV4OlX8KA8Ol/uI7V8/Kg==}
-    peerDependencies:
-      '@arethetypeswrong/core': ^0.18.2
-      publint: ^0.3.21
-      tsdown: ^0.22.0
-      tsnapi: ^0.3.3
-      unplugin-unused: ^0.5.7
-      vite-plus: ^0.1.20
-
   webpack-virtual-modules@0.6.2:
     resolution: {integrity: sha512-66/V2i5hQanC51vBQKPH4aI8NMAcBW59FVBs+rC7eGHupMyfn34q7rZIE+ETlJ+XTevqfUhVVBgSUNSW2flEUQ==}
 
@@ -2304,15 +2291,6 @@ snapshots:
       fsevents: 2.3.3
       jiti: 2.7.0
       yaml: 2.9.0
-
-  viteplus-preset-bjmhe@0.1.1(@arethetypeswrong/core@0.18.2)(publint@0.3.21)(tsdown@0.22.0(@arethetypeswrong/core@0.18.2)(@typescript/native-preview@7.0.0-dev.20260509.2)(publint@0.3.21)(typescript@6.0.3)(unplugin-unused@0.5.7))(tsnapi@0.3.3)(unplugin-unused@0.5.7)(vite-plus@0.1.22(@arethetypeswrong/core@0.18.2)(@types/node@25.9.1)(jiti@2.7.0)(publint@0.3.21)(typescript@6.0.3)(unplugin-unused@0.5.7)(vite@8.0.14(@types/node@25.9.1)(jiti@2.7.0)(yaml@2.9.0))(yaml@2.9.0)):
-    dependencies:
-      '@arethetypeswrong/core': 0.18.2
-      publint: 0.3.21
-      tsdown: 0.22.0(@arethetypeswrong/core@0.18.2)(@typescript/native-preview@7.0.0-dev.20260509.2)(publint@0.3.21)(typescript@6.0.3)(unplugin-unused@0.5.7)
-      tsnapi: 0.3.3
-      unplugin-unused: 0.5.7
-      vite-plus: 0.1.22(@arethetypeswrong/core@0.18.2)(@types/node@25.9.1)(jiti@2.7.0)(publint@0.3.21)(typescript@6.0.3)(unplugin-unused@0.5.7)(vite@8.0.14(@types/node@25.9.1)(jiti@2.7.0)(yaml@2.9.0))(yaml@2.9.0)
 
   webpack-virtual-modules@0.6.2: {}
 

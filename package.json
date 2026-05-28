@@ -1,5 +1,5 @@
 {
-  "name": "viteplus-preset-bjmhe",
+  "name": "@bjmhe/viteplus-preset",
   "version": "0.1.2",
   "description": "A starter for creating a TypeScript package.",
   "homepage": "https://github.com/bjmhe/viteplus-preset-bjmhe#readme",
@@ -41,8 +41,7 @@
     "@types/node": "^25.6.2",
     "@typescript/native-preview": "7.0.0-dev.20260509.2",
     "bumpp": "^11.1.0",
-    "typescript": "^6.0.3",
-    "viteplus-preset-bjmhe": "^0.1.1"
+    "typescript": "^6.0.3"
   },
   "peerDependencies": {
     "@arethetypeswrong/core": "^0.18.2",
