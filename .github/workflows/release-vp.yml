@@ -1,6 +1,7 @@
 name: Release Vite Plus
 
 on:
+  workflow_dispatch:
   push:
     tags:
       - "v*"
