@@ -23,7 +23,9 @@ export function lib(
           module: attw,
           level: "warn",
         },
+        banner: "/*! Keep it simple, keep it free */",
         deps: { onlyBundle: inlineDeps },
+        devtools: true,
         dts: {
           tsgo: true,
         },
@@ -39,12 +41,15 @@ export function lib(
           packageJson: true,
           legacy: true,
         },
+        footer: "/*! Built with love & coffee ☕ */",
         platform: "neutral",
         plugins: [ApiSnapshot()],
         publint: {
           enabled: "ci-only",
           module: [publint, publintUtils],
         },
+        sourcemap: true,
+        unused: true,
       },
       lint: {
         options: {
