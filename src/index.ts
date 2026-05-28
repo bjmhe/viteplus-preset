@@ -18,7 +18,7 @@ export function lib(
     {
       pack: {
         attw: {
-          enabled: true,
+          enabled: "ci-only",
           profile: "esm-only",
           module: attw,
           level: "warn",
@@ -36,14 +36,12 @@ export function lib(
                 ? "src/**/*.ts"
                 : entry,
         exports: true,
-        minify: true,
         platform: "neutral",
         plugins: [ApiSnapshot()],
         publint: {
-          enabled: true,
+          enabled: "ci-only",
           module: [publint, publintUtils],
         },
-        sourcemap: true,
       },
       lint: {
         options: {

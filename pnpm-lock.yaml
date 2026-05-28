@@ -20,13 +20,13 @@ importers:
         version: 0.3.21
       tsdown:
         specifier: ^0.22.0
-        version: 0.22.0(@typescript/native-preview@7.0.0-dev.20260509.2)(typescript@6.0.3)
+        version: 0.22.0(@arethetypeswrong/core@0.18.2)(@typescript/native-preview@7.0.0-dev.20260509.2)(publint@0.3.21)(typescript@6.0.3)
       tsnapi:
         specifier: ^0.3.3
         version: 0.3.3
       vite-plus:
         specifier: ^0.1.20
-        version: 0.1.22(@arethetypeswrong/core@0.18.2)(@types/node@25.9.1)(jiti@2.7.0)(typescript@6.0.3)(vite@8.0.14(@types/node@25.9.1)(jiti@2.7.0)(yaml@2.9.0))(yaml@2.9.0)
+        version: 0.1.22(@arethetypeswrong/core@0.18.2)(@types/node@25.9.1)(jiti@2.7.0)(publint@0.3.21)(typescript@6.0.3)(vite@8.0.14(@types/node@25.9.1)(jiti@2.7.0)(yaml@2.9.0))(yaml@2.9.0)
     devDependencies:
       '@types/node':
         specifier: ^25.6.2
@@ -40,6 +40,9 @@ importers:
       typescript:
         specifier: ^6.0.3
         version: 6.0.3
+      viteplus-preset-bjmhe:
+        specifier: ^0.0.3
+        version: 0.0.3(@arethetypeswrong/core@0.18.2)(publint@0.3.21)(tsdown@0.22.0(@arethetypeswrong/core@0.18.2)(@typescript/native-preview@7.0.0-dev.20260509.2)(publint@0.3.21)(typescript@6.0.3))(tsnapi@0.3.3)(vite-plus@0.1.22(@arethetypeswrong/core@0.18.2)(@types/node@25.9.1)(jiti@2.7.0)(publint@0.3.21)(typescript@6.0.3)(vite@8.0.14(@types/node@25.9.1)(jiti@2.7.0)(yaml@2.9.0))(yaml@2.9.0))
 
 packages:
 
@@ -1300,6 +1303,15 @@ packages:
       yaml:
         optional: true
 
+  viteplus-preset-bjmhe@0.0.3:
+    resolution: {integrity: sha512-sGV7aVBKJ/Jkkv+R0SwjKtuf2FJEOjV92PIjcigcYB5AgZhJOKFmfIg9t2XHt8vwNTglYrCalaVD6KxlKmkWTQ==}
+    peerDependencies:
+      '@arethetypeswrong/core': ^0.18.2
+      publint: ^0.3.21
+      tsdown: ^0.22.0
+      tsnapi: ^0.3.3
+      vite-plus: ^0.1.20
+
   ws@8.21.0:
     resolution: {integrity: sha512-Vsp28b7DRcimFQvrqu2Wek3z1iYxDCWqHYB8Qsnk/S4RfaCQzPGPyBNuVjJV3cd6UiKtUtp6sNM77gWvzcCH+g==}
     engines: {node: '>=10.0.0'}
@@ -1729,7 +1741,7 @@ snapshots:
       convert-source-map: 2.0.0
       tinyrainbow: 3.1.0
 
-  '@voidzero-dev/vite-plus-core@0.1.22(@arethetypeswrong/core@0.18.2)(@types/node@25.9.1)(jiti@2.7.0)(typescript@6.0.3)(yaml@2.9.0)':
+  '@voidzero-dev/vite-plus-core@0.1.22(@arethetypeswrong/core@0.18.2)(@types/node@25.9.1)(jiti@2.7.0)(publint@0.3.21)(typescript@6.0.3)(yaml@2.9.0)':
     dependencies:
       '@oxc-project/runtime': 0.129.0
       '@oxc-project/types': 0.129.0
@@ -1740,6 +1752,7 @@ snapshots:
       '@types/node': 25.9.1
       fsevents: 2.3.3
       jiti: 2.7.0
+      publint: 0.3.21
       typescript: 6.0.3
       yaml: 2.9.0
 
@@ -1761,11 +1774,11 @@ snapshots:
   '@voidzero-dev/vite-plus-linux-x64-musl@0.1.22':
     optional: true
 
-  '@voidzero-dev/vite-plus-test@0.1.22(@arethetypeswrong/core@0.18.2)(@types/node@25.9.1)(jiti@2.7.0)(typescript@6.0.3)(vite@8.0.14(@types/node@25.9.1)(jiti@2.7.0)(yaml@2.9.0))(yaml@2.9.0)':
+  '@voidzero-dev/vite-plus-test@0.1.22(@arethetypeswrong/core@0.18.2)(@types/node@25.9.1)(jiti@2.7.0)(publint@0.3.21)(typescript@6.0.3)(vite@8.0.14(@types/node@25.9.1)(jiti@2.7.0)(yaml@2.9.0))(yaml@2.9.0)':
     dependencies:
       '@standard-schema/spec': 1.1.0
       '@types/chai': 5.2.3
-      '@voidzero-dev/vite-plus-core': 0.1.22(@arethetypeswrong/core@0.18.2)(@types/node@25.9.1)(jiti@2.7.0)(typescript@6.0.3)(yaml@2.9.0)
+      '@voidzero-dev/vite-plus-core': 0.1.22(@arethetypeswrong/core@0.18.2)(@types/node@25.9.1)(jiti@2.7.0)(publint@0.3.21)(typescript@6.0.3)(yaml@2.9.0)
       es-module-lexer: 1.7.0
       obug: 2.1.1
       pixelmatch: 7.2.0
@@ -2122,7 +2135,7 @@ snapshots:
 
   tree-kill@1.2.2: {}
 
-  tsdown@0.22.0(@typescript/native-preview@7.0.0-dev.20260509.2)(typescript@6.0.3):
+  tsdown@0.22.0(@arethetypeswrong/core@0.18.2)(@typescript/native-preview@7.0.0-dev.20260509.2)(publint@0.3.21)(typescript@6.0.3):
     dependencies:
       ansis: 4.3.0
       cac: 7.0.0
@@ -2140,6 +2153,8 @@ snapshots:
       tree-kill: 1.2.2
       unconfig-core: 7.5.0
     optionalDependencies:
+      '@arethetypeswrong/core': 0.18.2
+      publint: 0.3.21
       typescript: 6.0.3
     transitivePeerDependencies:
       - '@ts-macro/tsc'
@@ -2179,12 +2194,12 @@ snapshots:
 
   validate-npm-package-name@5.0.1: {}
 
-  vite-plus@0.1.22(@arethetypeswrong/core@0.18.2)(@types/node@25.9.1)(jiti@2.7.0)(typescript@6.0.3)(vite@8.0.14(@types/node@25.9.1)(jiti@2.7.0)(yaml@2.9.0))(yaml@2.9.0):
+  vite-plus@0.1.22(@arethetypeswrong/core@0.18.2)(@types/node@25.9.1)(jiti@2.7.0)(publint@0.3.21)(typescript@6.0.3)(vite@8.0.14(@types/node@25.9.1)(jiti@2.7.0)(yaml@2.9.0))(yaml@2.9.0):
     dependencies:
       '@oxc-project/types': 0.129.0
       '@oxlint/plugins': 1.61.0
-      '@voidzero-dev/vite-plus-core': 0.1.22(@arethetypeswrong/core@0.18.2)(@types/node@25.9.1)(jiti@2.7.0)(typescript@6.0.3)(yaml@2.9.0)
-      '@voidzero-dev/vite-plus-test': 0.1.22(@arethetypeswrong/core@0.18.2)(@types/node@25.9.1)(jiti@2.7.0)(typescript@6.0.3)(vite@8.0.14(@types/node@25.9.1)(jiti@2.7.0)(yaml@2.9.0))(yaml@2.9.0)
+      '@voidzero-dev/vite-plus-core': 0.1.22(@arethetypeswrong/core@0.18.2)(@types/node@25.9.1)(jiti@2.7.0)(publint@0.3.21)(typescript@6.0.3)(yaml@2.9.0)
+      '@voidzero-dev/vite-plus-test': 0.1.22(@arethetypeswrong/core@0.18.2)(@types/node@25.9.1)(jiti@2.7.0)(publint@0.3.21)(typescript@6.0.3)(vite@8.0.14(@types/node@25.9.1)(jiti@2.7.0)(yaml@2.9.0))(yaml@2.9.0)
       oxfmt: 0.48.0
       oxlint: 1.63.0(oxlint-tsgolint@0.22.1)
       oxlint-tsgolint: 0.22.1
@@ -2240,6 +2255,14 @@ snapshots:
       fsevents: 2.3.3
       jiti: 2.7.0
       yaml: 2.9.0
+
+  viteplus-preset-bjmhe@0.0.3(@arethetypeswrong/core@0.18.2)(publint@0.3.21)(tsdown@0.22.0(@arethetypeswrong/core@0.18.2)(@typescript/native-preview@7.0.0-dev.20260509.2)(publint@0.3.21)(typescript@6.0.3))(tsnapi@0.3.3)(vite-plus@0.1.22(@arethetypeswrong/core@0.18.2)(@types/node@25.9.1)(jiti@2.7.0)(publint@0.3.21)(typescript@6.0.3)(vite@8.0.14(@types/node@25.9.1)(jiti@2.7.0)(yaml@2.9.0))(yaml@2.9.0)):
+    dependencies:
+      '@arethetypeswrong/core': 0.18.2
+      publint: 0.3.21
+      tsdown: 0.22.0(@arethetypeswrong/core@0.18.2)(@typescript/native-preview@7.0.0-dev.20260509.2)(publint@0.3.21)(typescript@6.0.3)
+      tsnapi: 0.3.3
+      vite-plus: 0.1.22(@arethetypeswrong/core@0.18.2)(@types/node@25.9.1)(jiti@2.7.0)(publint@0.3.21)(typescript@6.0.3)(vite@8.0.14(@types/node@25.9.1)(jiti@2.7.0)(yaml@2.9.0))(yaml@2.9.0)
 
   ws@8.21.0: {}
 

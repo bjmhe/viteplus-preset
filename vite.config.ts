@@ -15,6 +15,9 @@ export default defineConfig({
       typeAware: true,
       typeCheck: true,
     },
+    ignorePatterns: ["__snapshots__/**/*", "dist/**/*"],
   },
-  fmt: {},
+  fmt: {
+    ignorePatterns: ["__snapshots__/**/*", "dist/**/*"],
+  },
 });
