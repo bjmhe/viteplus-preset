@@ -1,8 +1,8 @@
-import { mergeConfig, type UserConfig } from "vite-plus";
 import * as attw from "@arethetypeswrong/core";
 import * as publint from "publint";
 import * as publintUtils from "publint/utils";
 import ApiSnapshot from "tsnapi/rolldown";
+import { mergeConfig, type UserConfig } from "vite-plus";
 import type { TsdownInputOption } from "tsdown";
 
 export interface LibOptions {
@@ -43,7 +43,6 @@ export function lib(
           module: [publint, publintUtils],
         },
         sourcemap: true,
-        ...overrides.pack,
       },
       lint: {
         options: {
@@ -51,11 +50,9 @@ export function lib(
           typeCheck: true,
         },
         ignorePatterns: ["__snapshots__/**/*", "dist/**/*"],
-        ...overrides.lint,
       },
       fmt: {
         ignorePatterns: ["__snapshots__/**/*", "dist/**/*"],
-        ...overrides.fmt,
       },
     },
     overrides,
@@ -63,10 +60,15 @@ export function lib(
 }
 
 export function nodeLib(options: LibOptions = {}, overrides: UserConfig = {}): UserConfig {
-  return lib(options, {
-    pack: {
-      platform: "node",
-    },
-    ...overrides,
-  });
+  return lib(
+    options,
+    mergeConfig(
+      {
+        pack: {
+          platform: "node",
+        },
+      },
+      overrides,
+    ),
+  );
 }
