@@ -53,18 +53,18 @@ export function lib(
         unused: true,
       },
       lint: {
+        ignorePatterns: ["__snapshots__/**/*", "dist/**/*"],
         options: {
           typeAware: true,
           typeCheck: true,
         },
-        ignorePatterns: ["__snapshots__/**/*", "dist/**/*"],
       },
       fmt: {
         bracketSameLine: true,
+        ignorePatterns: ["__snapshots__/**/*", "dist/**/*"],
         jsdoc: true,
         sortImports: true,
         sortTailwindcss: true,
-        ignorePatterns: ["__snapshots__/**/*", "dist/**/*"],
       },
     },
     overrides,
