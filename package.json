@@ -13,7 +13,9 @@
     "url": "git+https://github.com/bjmhe/viteplus-preset-bjmhe.git"
   },
   "files": [
-    "dist"
+    "dist",
+    "README.md",
+    "tsconfig.json"
   ],
   "type": "module",
   "sideEffects": false,
