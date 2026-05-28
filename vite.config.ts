@@ -34,7 +34,7 @@ export default defineConfig({
       legacy: true,
     },
     footer: "/*! Built with love & coffee ☕ */",
-    platform: "neutral",
+    platform: "node",
     plugins: [ApiSnapshot()],
     publint: {
       enabled: "ci-only",
