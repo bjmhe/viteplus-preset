@@ -48,6 +48,7 @@ export function lib(
           enabled: "ci-only",
           module: [publint, publintUtils],
         },
+        shims: true,
         sourcemap: true,
         unused: true,
       },
