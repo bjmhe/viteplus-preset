@@ -2,15 +2,15 @@
   "name": "@bjmhe/viteplus-preset",
   "version": "0.1.2",
   "description": "A starter for creating a TypeScript package.",
-  "homepage": "https://github.com/bjmhe/viteplus-preset-bjmhe#readme",
+  "homepage": "https://github.com/bjmhe/viteplus-preset#readme",
   "bugs": {
-    "url": "https://github.com/bjmhe/viteplus-preset-bjmhe/issues"
+    "url": "https://github.com/bjmhe/viteplus-preset/issues"
   },
   "license": "MIT",
   "author": "Benjamin He <hi@bjmhe.me>",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bjmhe/viteplus-preset-bjmhe.git"
+    "url": "git+https://github.com/bjmhe/viteplus-preset.git"
   },
   "files": [
     "dist",
