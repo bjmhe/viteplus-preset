@@ -39,7 +39,7 @@
     "@typescript/native-preview": "7.0.0-dev.20260509.2",
     "bumpp": "^11.1.0",
     "typescript": "^6.0.3",
-    "viteplus-preset-bjmhe": "^0.0.4"
+    "viteplus-preset-bjmhe": "^0.0.5"
   },
   "peerDependencies": {
     "@arethetypeswrong/core": "^0.18.2",
