@@ -3,7 +3,7 @@
 [![Open on npmx][npmx-version-src]][npmx-href]
 [![npm downloads][npmx-downloads-src]][npmx-href]
 
-A starter for creating a Vite Plus project.
+A Vite Plus preset for creating a TypeScript package.
 
 ## Install
 
