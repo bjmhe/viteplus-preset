@@ -60,6 +60,10 @@ export function lib(
         ignorePatterns: ["__snapshots__/**/*", "dist/**/*"],
       },
       fmt: {
+        bracketSameLine: true,
+        jsdoc: true,
+        sortImports: true,
+        sortTailwindcss: true,
         ignorePatterns: ["__snapshots__/**/*", "dist/**/*"],
       },
     },
