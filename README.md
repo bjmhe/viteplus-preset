@@ -1,23 +1,29 @@
-# vite-plus-starter
+# viteplus-preset
+
+[![Open on npmx][npmx-version-src]][npmx-href]
+[![npm downloads][npmx-downloads-src]][npmx-href]
 
 A starter for creating a Vite Plus project.
 
-## Development
-
-- Install dependencies:
+## Install
 
 ```bash
-vp install
+vp install -D @bjmhe/viteplus-preset
 ```
 
-- Run the unit tests:
+## Usage
 
-```bash
-vp test
+```typescript
+// vite.config.ts
+import { nodeLib } from "@bjmhe/viteplus-preset";
+
+export default nodeLib();
 ```
 
-- Build the library:
+## Licenses
 
-```bash
-vp pack
-```
+This project is licensed under the [MIT License](LICENSE).
+
+[npmx-version-src]: https://npmx.dev/api/registry/badge/version/@bjmhe/viteplus-preset
+[npmx-downloads-src]: https://npmx.dev/api/registry/badge/downloads-month/@bjmhe/viteplus-preset
+[npmx-href]: https://npmx.dev/@bjmhe/viteplus-preset
