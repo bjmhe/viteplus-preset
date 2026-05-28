@@ -18,7 +18,7 @@ export function lib(
     {
       pack: {
         attw: {
-          enabled: "ci-only",
+          enabled: false,
           profile: "esm-only",
           module: attw,
           level: "warn",
@@ -35,7 +35,10 @@ export function lib(
               : entry === "all"
                 ? "src/**/*.ts"
                 : entry,
-        exports: true,
+        exports: {
+          packageJson: true,
+          legacy: true,
+        },
         platform: "neutral",
         plugins: [ApiSnapshot()],
         publint: {

@@ -45,5 +45,8 @@
     "tsnapi": "^0.3.3",
     "vite-plus": "^0.1.20"
   },
-  "packageManager": "pnpm@11.4.0"
+  "packageManager": "pnpm@11.4.0",
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.mts"
 }
