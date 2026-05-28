@@ -7,7 +7,7 @@ on:
 
 jobs:
   release:
-    uses: bjmhe/workflows/.github/workflows/release.yml@feat/release-vp
+    uses: bjmhe/workflows/.github/workflows/release-vp.yml@feat/release-vp
     with:
       publish: true
     permissions:
