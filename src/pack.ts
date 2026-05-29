@@ -5,6 +5,7 @@ import ApiSnapshot from "tsnapi/rolldown";
 import type { UserConfig } from "vite-plus";
 
 import type { LibOptions } from ".";
+import { PACK_BANNER, PACK_FOOTER } from "./constant";
 
 export const getPackConfig = (options: LibOptions): UserConfig["pack"] => {
   const { entry = "index", inlineDeps = [] } = options;
@@ -15,7 +16,7 @@ export const getPackConfig = (options: LibOptions): UserConfig["pack"] => {
       module: attw,
       level: "warn",
     },
-    banner: "/*! Keep it simple, keep it free */",
+    banner: PACK_BANNER,
     deps: { onlyBundle: inlineDeps },
     devtools: true,
     dts: {
@@ -33,7 +34,7 @@ export const getPackConfig = (options: LibOptions): UserConfig["pack"] => {
       packageJson: true,
       legacy: true,
     },
-    footer: "/*! Built with love & coffee ☕ */",
+    footer: PACK_FOOTER,
     platform: "neutral",
     plugins: [ApiSnapshot()],
     publint: {
