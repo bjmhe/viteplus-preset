@@ -10,26 +10,9 @@ permissions:
   contents: read
 
 jobs:
-  autofix-autofix:
-    runs-on: ubuntu-latest
+  autofix:
+    uses: bjmhe/workflows/.github/workflows/autofix-vp.yml@feat/release-vp
     permissions:
       contents: read
-    steps:
-      - name: Checkout
-        uses: actions/checkout@6
-        with:
-          persist-credentials: false
-          fetch-depth: "1"
-
-      - name: Setup Vite Plus
-        uses: sxzz/workflows/setup-vp@main
-        with:
-          node-version: 24
-
-      - name: Fix
-        run: vp check --fix && vp run build --update-snapshot
-
-      - name: Commit
-        uses: autofix-ci/action@v1
-        with:
-          fail-fast: false
+    with:
+      command: vp check --fix && vp run build --update-snapshot
