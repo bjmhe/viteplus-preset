@@ -75,8 +75,4 @@ Made by [@bjmhe](https://github.com/bjmhe) and [community](https://github.com/bj
 
 <!-- automd:with-automd -->
 
----
-
-_🤖 auto updated with [automd](https://automd.unjs.io)_
-
 <!-- /automd -->
