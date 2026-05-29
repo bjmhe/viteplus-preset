@@ -11,7 +11,7 @@ permissions:
 
 jobs:
   autofix:
-    uses: bjmhe/workflows/.github/workflows/autofix-vp.yml@feat/release-vp
+    uses: bjmhe/workflows/.github/workflows/autofix.yml@feat/release-vp
     permissions:
       contents: read
     with:
