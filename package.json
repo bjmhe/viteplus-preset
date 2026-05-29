@@ -33,6 +33,9 @@
     ".": "./dist/index.mjs",
     "./package.json": "./package.json"
   },
+  "engines": {
+    "node": ">=24.16.0"
+  },
   "publishConfig": {
     "access": "public"
   },
@@ -45,13 +48,19 @@
     "prepublishOnly": "vp run build"
   },
   "devDependencies": {
-    "@bjmhe/viteplus-preset": "^1.0.1",
+    "@bjmhe/viteplus-preset": "workspace:*",
+    "@arethetypeswrong/core": "^0.18.2",
     "@types/node": "^25.6.2",
     "@typescript/native-preview": "7.0.0-dev.20260509.2",
     "@vitest/coverage-v8": "^4.1.7",
     "automd": "^0.4.3",
     "bumpp": "^11.1.0",
-    "typescript": "^6.0.3"
+    "publint": "^0.3.21",
+    "tsdown": "^0.22.0",
+    "tsnapi": "^0.3.3",
+    "typescript": "^6.0.3",
+    "unplugin-unused": "^0.5.7",
+    "vite-plus": "^0.1.20"
   },
   "peerDependencies": {
     "@arethetypeswrong/core": "^0.18.2",
