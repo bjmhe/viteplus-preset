@@ -13,16 +13,16 @@ jobs:
       contents: write
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
-        with:
-          ref: ${{ github.head_ref || github.ref }}
-          persist-credentials: true
-
       - name: Setup Vite Plus
         uses: sxzz/workflows/setup-vp@main
         with:
           node-version: 24
+          # setup-vp runs actions/checkout internally; default persist-credentials is false
+          persist-credentials: true
+
+      - name: Checkout PR head branch
+        if: github.event_name == 'pull_request'
+        run: git checkout -B "$GITHUB_HEAD_REF" "origin/$GITHUB_HEAD_REF"
 
       - name: Automd
         run: vpx automd
