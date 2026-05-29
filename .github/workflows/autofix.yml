@@ -1,0 +1,28 @@
+name: autofix.ci
+
+on:
+  workflow_dispatch:
+  pull_request:
+
+jobs:
+  autofix-autofix:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
+        with:
+          persist-credentials: false
+          fetch-depth: "1"
+
+      - name: Setup Vite Plus
+        uses: sxzz/workflows/setup-vp@main
+        with:
+          node-version: 24
+
+      - name: Fix
+        run: vp check --fix && vp run build --update-snapshot
+
+      - name: Commit
+        uses: autofix-ci/action@c5b2d67aa2274e7b5a18224e8171550871fc7e4a
