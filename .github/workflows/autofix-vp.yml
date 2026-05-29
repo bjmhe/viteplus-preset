@@ -1,4 +1,4 @@
-name: Autofix
+name: Autofix Vite Plus
 
 on:
   workflow_dispatch:
