@@ -12,29 +12,10 @@ A Vite Plus preset for creating a TypeScript package.
 
 ## Install
 
-<!-- automd:pm-install dev -->
-
 ```sh
-# ✨ Auto-detect
-npx nypm install -D @bjmhe/viteplus-preset
-
-# npm
-npm install -D @bjmhe/viteplus-preset
-
-# yarn
-yarn add -D @bjmhe/viteplus-preset
-
-# pnpm
-pnpm add -D @bjmhe/viteplus-preset
-
-# bun
-bun install -D @bjmhe/viteplus-preset
-
-# deno
-deno install --dev npm:@bjmhe/viteplus-preset
+# ✨ Vite Plus
+vp add @bjmhe/viteplus-preset
 ```
-
-<!-- /automd -->
 
 ## Usage
 
