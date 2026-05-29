@@ -17,7 +17,6 @@ jobs:
         uses: sxzz/workflows/setup-vp@main
         with:
           node-version: 24
-          # setup-vp runs actions/checkout internally; default persist-credentials is false
           persist-credentials: true
 
       - name: Checkout PR head branch
