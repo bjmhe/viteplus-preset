@@ -28,6 +28,9 @@ importers:
         specifier: ^0.1.20
         version: 0.1.23(@arethetypeswrong/core@0.18.2)(@types/node@25.9.1)(@vitest/coverage-v8@4.1.7)(jiti@2.7.0)(publint@0.3.21)(typescript@6.0.3)(unplugin-unused@0.5.7)(vite@8.0.14(@types/node@25.9.1)(jiti@2.7.0)(yaml@2.9.0))(yaml@2.9.0)
     devDependencies:
+      '@arethetypeswrong/core':
+        specifier: ^0.18.2
+        version: 0.18.2
       '@types/node':
         specifier: ^25.6.2
         version: 25.9.1
@@ -43,9 +46,15 @@ importers:
       bumpp:
         specifier: ^11.1.0
         version: 11.1.0
+      publint:
+        specifier: ^0.3.21
+        version: 0.3.21
       typescript:
         specifier: ^6.0.3
         version: 6.0.3
+      unplugin-unused:
+        specifier: ^0.5.7
+        version: 0.5.7
 
 packages:
 
