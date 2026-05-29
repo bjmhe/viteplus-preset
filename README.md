@@ -1,6 +1,6 @@
 # viteplus-preset
 
-<!-- automd:badges license codecov -->
+<!-- automd:badges license bundlephobia codecov -->
 
 [![npm version](https://img.shields.io/npm/v/@bjmhe/viteplus-preset)](https://npmjs.com/package/@bjmhe/viteplus-preset)
 [![npm downloads](https://img.shields.io/npm/dm/@bjmhe/viteplus-preset)](https://npm.chart.dev/@bjmhe/viteplus-preset)
