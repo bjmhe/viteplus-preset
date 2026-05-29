@@ -53,6 +53,7 @@
     "@vitest/coverage-v8": "^4.1.7",
     "automd": "^0.4.3",
     "bumpp": "^11.1.0",
+    "tsdown": "^0.22.1",
     "typescript": "^6.0.3"
   },
   "peerDependencies": {
