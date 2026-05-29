@@ -39,8 +39,6 @@
   "scripts": {
     "build": "vp pack",
     "dev": "vp pack --watch",
-    "test": "vp test",
-    "check": "vp check",
     "release": "bumpp",
     "prepublishOnly": "vp run build"
   },
