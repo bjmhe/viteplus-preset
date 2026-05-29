@@ -43,9 +43,9 @@
     "prepublishOnly": "vp run build"
   },
   "dependencies": {
-    "@bjmhe/viteplus-preset-fmt": "^0.0.0",
-    "@bjmhe/viteplus-preset-lint": "^0.0.0",
-    "@bjmhe/viteplus-preset-pack": "^2.0.4"
+    "@bjmhe/viteplus-preset-fmt": "^0.0.3",
+    "@bjmhe/viteplus-preset-lint": "^0.0.2",
+    "@bjmhe/viteplus-preset-pack": "^2.0.5"
   },
   "devDependencies": {
     "@types/node": "^25.6.2",
