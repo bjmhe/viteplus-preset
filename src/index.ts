@@ -1,8 +1,8 @@
 import { fmtPreset } from "@bjmhe/viteplus-preset-fmt";
+import { lintPreset } from "@bjmhe/viteplus-preset-lint";
 import type { TsdownInputOption } from "tsdown";
 import { mergeConfig, type UserConfig } from "vite-plus";
 
-import { getLintConfig } from "./lint";
 import { getPackConfig } from "./pack";
 
 export interface LibOptions {
@@ -20,7 +20,7 @@ export function lib(
   return mergeConfig(
     {
       pack: getPackConfig({ entry, inlineDeps }),
-      lint: getLintConfig(),
+      lint: lintPreset(),
       fmt: fmtPreset(),
     },
     overrides,
