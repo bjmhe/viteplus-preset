@@ -1,9 +1,9 @@
-import * as attw from "@arethetypeswrong/core";
-import * as publint from "publint";
-import * as publintUtils from "publint/utils";
 import type { TsdownInputOption } from "tsdown";
-import ApiSnapshot from "tsnapi/rolldown";
 import { mergeConfig, type UserConfig } from "vite-plus";
+
+import { getFmtConfig } from "./fmt";
+import { getLintConfig } from "./lint";
+import { getPackConfig } from "./pack";
 
 export interface LibOptions {
   /** Entry preset or custom tsdown input. */
@@ -19,56 +19,9 @@ export function lib(
 ): UserConfig {
   return mergeConfig(
     {
-      pack: {
-        attw: {
-          enabled: false,
-          profile: "esm-only",
-          module: attw,
-          level: "warn",
-        },
-        banner: "/*! Keep it simple, keep it free */",
-        deps: { onlyBundle: inlineDeps },
-        devtools: true,
-        dts: {
-          tsgo: true,
-        },
-        entry:
-          entry === "index"
-            ? "src/index.ts"
-            : entry === "shallow"
-              ? "src/*.ts"
-              : entry === "all"
-                ? "src/**/*.ts"
-                : entry,
-        exports: {
-          packageJson: true,
-          legacy: true,
-        },
-        footer: "/*! Built with love & coffee ☕ */",
-        platform: "neutral",
-        plugins: [ApiSnapshot()],
-        publint: {
-          enabled: "ci-only",
-          module: [publint, publintUtils],
-        },
-        shims: true,
-        sourcemap: true,
-        unused: true,
-      },
-      lint: {
-        ignorePatterns: ["__snapshots__/**/*", "dist/**/*", "coverage/**/*"],
-        options: {
-          typeAware: true,
-          typeCheck: true,
-        },
-      },
-      fmt: {
-        bracketSameLine: true,
-        ignorePatterns: ["__snapshots__/**/*", "dist/**/*", "coverage/**/*"],
-        jsdoc: true,
-        sortImports: true,
-        sortTailwindcss: true,
-      },
+      pack: getPackConfig({ entry, inlineDeps }),
+      lint: getLintConfig(),
+      fmt: getFmtConfig(),
     },
     overrides,
   );
