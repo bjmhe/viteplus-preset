@@ -1,14 +1,10 @@
 # viteplus-preset
 
-<!-- automd:badges license bundlephobia codecov -->
-
-[![npm version](https://img.shields.io/npm/v/@bjmhe/viteplus-preset)](https://npmjs.com/package/@bjmhe/viteplus-preset)
-[![npm downloads](https://img.shields.io/npm/dm/@bjmhe/viteplus-preset)](https://npm.chart.dev/@bjmhe/viteplus-preset)
-[![bundle size](https://img.shields.io/bundlephobia/minzip/@bjmhe/viteplus-preset)](https://bundlephobia.com/package/@bjmhe/viteplus-preset)
-[![codecov](https://img.shields.io/codecov/c/gh/bjmhe/viteplus-preset)](https://codecov.io/gh/bjmhe/viteplus-preset)
-[![license](https://img.shields.io/github/license/bjmhe/viteplus-preset)](https://github.com/bjmhe/viteplus-preset/blob/main/LICENSE)
-
-<!-- /automd -->
+[![Open on npmx.dev](https://npmx.dev/api/registry/badge/version/@bjmhe/viteplus-preset)](https://npmx.dev/package/@bjmhe/viteplus-preset)
+[![Open on npmx.dev](https://npmx.dev/api/registry/badge/size/@bjmhe/viteplus-preset)](https://npmx.dev/package/@bjmhe/viteplus-preset)
+[![Open on npmx.dev](https://npmx.dev/api/registry/badge/downloads-year/@bjmhe/viteplus-preset)](https://npmx.dev/package/@bjmhe/viteplus-preset)
+[![Open on npmx.dev](https://npmx.dev/api/registry/badge/engines/@bjmhe/viteplus-preset)](https://npmx.dev/package/@bjmhe/viteplus-preset)
+[![Open on npmx.dev](https://npmx.dev/api/registry/badge/license/@bjmhe/viteplus-preset)](https://npmx.dev/package/@bjmhe/viteplus-preset)
 
 > inspired by `tsdown-preset-sxzz`
 
