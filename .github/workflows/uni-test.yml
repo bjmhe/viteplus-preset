@@ -12,8 +12,8 @@ jobs:
   unit-test:
     uses: bjmhe/workflows/.github/workflows/unit-test.yml@feat/release-vp
 
-  # coverage:
-  #   uses: sxzz/workflows/.github/workflows/coverage.yml@main
-  #   needs: unit-test
-  #   permissions:
-  #     id-token: write
+  coverage:
+    uses: bjmhe/workflows/.github/workflows/coverage.yml@feat/release-vp
+    needs: unit-test
+    permissions:
+      id-token: write
