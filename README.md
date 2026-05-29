@@ -45,7 +45,7 @@ deno install --dev npm:@bjmhe/viteplus-preset
 <!-- automd:file src="./examples/vite.config.lib.ts" code lang="ts" -->
 
 ```ts [vite.config.lib.ts]
-import { lib } from "@bjmhe/viteplus-preset";
+import { lib } from "../src";
 
 export default lib();
 ```
@@ -55,7 +55,7 @@ export default lib();
 <!-- automd:file src="./examples/vite.config.nodelib.ts" code lang="ts" -->
 
 ```ts [vite.config.nodelib.ts]
-import { nodeLib } from "@bjmhe/viteplus-preset";
+import { nodeLib } from "../src";
 
 export default nodeLib();
 ```
