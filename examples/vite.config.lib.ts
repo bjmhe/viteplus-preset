@@ -1,3 +1,3 @@
-import { lib } from "@bjmhe/viteplus-preset";
+import { lib } from "../src";
 
 export default lib();

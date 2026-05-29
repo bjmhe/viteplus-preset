@@ -1,3 +1,3 @@
-import { nodeLib } from "@bjmhe/viteplus-preset";
+import { nodeLib } from "../src";
 
 export default nodeLib();
