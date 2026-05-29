@@ -13,14 +13,14 @@ importers:
   .:
     dependencies:
       '@bjmhe/viteplus-preset-fmt':
-        specifier: ^0.0.3
-        version: 0.0.3(vite-plus@0.1.23(@arethetypeswrong/core@0.18.2)(@types/node@25.9.1)(@vitest/coverage-v8@4.1.7)(jiti@2.7.0)(publint@0.3.21)(typescript@6.0.3)(unplugin-unused@0.5.7)(vite@8.0.14(@types/node@25.9.1)(jiti@2.7.0)(yaml@2.9.0))(yaml@2.9.0))
+        specifier: latest
+        version: 0.0.6(vite-plus@0.1.23(@arethetypeswrong/core@0.18.2)(@types/node@25.9.1)(@vitest/coverage-v8@4.1.7)(jiti@2.7.0)(publint@0.3.21)(typescript@6.0.3)(unplugin-unused@0.5.7)(vite@8.0.14(@types/node@25.9.1)(jiti@2.7.0)(yaml@2.9.0))(yaml@2.9.0))
       '@bjmhe/viteplus-preset-lint':
-        specifier: ^0.0.2
-        version: 0.0.2(vite-plus@0.1.23(@arethetypeswrong/core@0.18.2)(@types/node@25.9.1)(@vitest/coverage-v8@4.1.7)(jiti@2.7.0)(publint@0.3.21)(typescript@6.0.3)(unplugin-unused@0.5.7)(vite@8.0.14(@types/node@25.9.1)(jiti@2.7.0)(yaml@2.9.0))(yaml@2.9.0))
+        specifier: latest
+        version: 0.0.4(vite-plus@0.1.23(@arethetypeswrong/core@0.18.2)(@types/node@25.9.1)(@vitest/coverage-v8@4.1.7)(jiti@2.7.0)(publint@0.3.21)(typescript@6.0.3)(unplugin-unused@0.5.7)(vite@8.0.14(@types/node@25.9.1)(jiti@2.7.0)(yaml@2.9.0))(yaml@2.9.0))
       '@bjmhe/viteplus-preset-pack':
-        specifier: ^2.0.5
-        version: 2.0.5(@arethetypeswrong/core@0.18.2)(publint@0.3.21)(tsdown@0.22.1(@arethetypeswrong/core@0.18.2)(@typescript/native-preview@7.0.0-dev.20260527.2)(publint@0.3.21)(typescript@6.0.3)(unplugin-unused@0.5.7))(unplugin-unused@0.5.7)(vite-plus@0.1.23(@arethetypeswrong/core@0.18.2)(@types/node@25.9.1)(@vitest/coverage-v8@4.1.7)(jiti@2.7.0)(publint@0.3.21)(typescript@6.0.3)(unplugin-unused@0.5.7)(vite@8.0.14(@types/node@25.9.1)(jiti@2.7.0)(yaml@2.9.0))(yaml@2.9.0))(vitest@4.1.7)
+        specifier: latest
+        version: 2.0.9(@arethetypeswrong/core@0.18.2)(@typescript/native-preview@7.0.0-dev.20260527.2)(publint@0.3.21)(typescript@6.0.3)(unplugin-unused@0.5.7)(vite-plus@0.1.23(@arethetypeswrong/core@0.18.2)(@types/node@25.9.1)(@vitest/coverage-v8@4.1.7)(jiti@2.7.0)(publint@0.3.21)(typescript@6.0.3)(unplugin-unused@0.5.7)(vite@8.0.14(@types/node@25.9.1)(jiti@2.7.0)(yaml@2.9.0))(yaml@2.9.0))(vitest@4.1.7)
       tsdown:
         specifier: ^0.22.1
         version: 0.22.1(@arethetypeswrong/core@0.18.2)(@typescript/native-preview@7.0.0-dev.20260527.2)(publint@0.3.21)(typescript@6.0.3)(unplugin-unused@0.5.7)
@@ -126,14 +126,32 @@ packages:
     peerDependencies:
       vite-plus: ^0.1.20
 
+  '@bjmhe/viteplus-preset-fmt@0.0.6':
+    resolution: {integrity: sha512-XgOdGBOMhLZ78QMh894XM55qJC68De0ikgjX+FVfjm2Q0upX6GZy6hf2/BOSoHmEnvgD1xs5Cbsp+S4xfX58/A==}
+    engines: {node: '>=24.16.0'}
+    peerDependencies:
+      vite-plus: ^0.1.20
+
   '@bjmhe/viteplus-preset-lint@0.0.2':
     resolution: {integrity: sha512-gng9N/i0ayf7ylpG8binINzIRWCZOXyNyWmlMM2ORkxXj3mi8kFpCCdZO36u+/cMFAu0Yb/USlCOT3eRc5XHFQ==}
     engines: {node: '>=24.16.0'}
     peerDependencies:
       vite-plus: ^0.1.20
 
+  '@bjmhe/viteplus-preset-lint@0.0.4':
+    resolution: {integrity: sha512-5Da+sXF0UN5esMuhWnrBxnMmvYq5nadqh7dUYC5XrEN4ZasYYe7iYm15rnBEc5QAP26daagcQMM5teLHZoeR6A==}
+    engines: {node: '>=24.16.0'}
+    peerDependencies:
+      vite-plus: ^0.1.20
+
   '@bjmhe/viteplus-preset-pack@2.0.5':
     resolution: {integrity: sha512-OwMrFtHUAbTyVxZXFa3qakpS44kl8o8bq9I/XwtokdYZWk+ja7AgaSIdo7GnvTo3XJfHzIzN4njQ/bm691icOA==}
+    engines: {node: '>=24.16.0'}
+    peerDependencies:
+      vite-plus: ^0.1.20
+
+  '@bjmhe/viteplus-preset-pack@2.0.9':
+    resolution: {integrity: sha512-xeiG+KsJxy/O9cZ9ahP6e4migjJJFbleJar7lTWGw+weVzHU62essNww9QBnu0Iavu/8HcLLh+SyNmZmJLhBaQ==}
     engines: {node: '>=24.16.0'}
     peerDependencies:
       vite-plus: ^0.1.20
@@ -147,6 +165,12 @@ packages:
       tsdown: ^0.22.0
       tsnapi: ^0.3.3
       unplugin-unused: ^0.5.7
+      vite-plus: ^0.1.20
+
+  '@bjmhe/viteplus-preset@1.0.9':
+    resolution: {integrity: sha512-juvfM6P5y35NietQvXdDCA1xLHk86kXZTuBlDDGd/Wg0U9cDq/MBTvvkc34q0vxe9DxanreUcU+YnQq4ai/1vw==}
+    engines: {node: '>=24.16.0'}
+    peerDependencies:
       vite-plus: ^0.1.20
 
   '@braidai/lang@1.1.2':
@@ -1921,7 +1945,15 @@ snapshots:
     dependencies:
       vite-plus: 0.1.23(@arethetypeswrong/core@0.18.2)(@types/node@25.9.1)(@vitest/coverage-v8@4.1.7)(jiti@2.7.0)(publint@0.3.21)(typescript@6.0.3)(unplugin-unused@0.5.7)(vite@8.0.14(@types/node@25.9.1)(jiti@2.7.0)(yaml@2.9.0))(yaml@2.9.0)
 
+  '@bjmhe/viteplus-preset-fmt@0.0.6(vite-plus@0.1.23(@arethetypeswrong/core@0.18.2)(@types/node@25.9.1)(@vitest/coverage-v8@4.1.7)(jiti@2.7.0)(publint@0.3.21)(typescript@6.0.3)(unplugin-unused@0.5.7)(vite@8.0.14(@types/node@25.9.1)(jiti@2.7.0)(yaml@2.9.0))(yaml@2.9.0))':
+    dependencies:
+      vite-plus: 0.1.23(@arethetypeswrong/core@0.18.2)(@types/node@25.9.1)(@vitest/coverage-v8@4.1.7)(jiti@2.7.0)(publint@0.3.21)(typescript@6.0.3)(unplugin-unused@0.5.7)(vite@8.0.14(@types/node@25.9.1)(jiti@2.7.0)(yaml@2.9.0))(yaml@2.9.0)
+
   '@bjmhe/viteplus-preset-lint@0.0.2(vite-plus@0.1.23(@arethetypeswrong/core@0.18.2)(@types/node@25.9.1)(@vitest/coverage-v8@4.1.7)(jiti@2.7.0)(publint@0.3.21)(typescript@6.0.3)(unplugin-unused@0.5.7)(vite@8.0.14(@types/node@25.9.1)(jiti@2.7.0)(yaml@2.9.0))(yaml@2.9.0))':
+    dependencies:
+      vite-plus: 0.1.23(@arethetypeswrong/core@0.18.2)(@types/node@25.9.1)(@vitest/coverage-v8@4.1.7)(jiti@2.7.0)(publint@0.3.21)(typescript@6.0.3)(unplugin-unused@0.5.7)(vite@8.0.14(@types/node@25.9.1)(jiti@2.7.0)(yaml@2.9.0))(yaml@2.9.0)
+
+  '@bjmhe/viteplus-preset-lint@0.0.4(vite-plus@0.1.23(@arethetypeswrong/core@0.18.2)(@types/node@25.9.1)(@vitest/coverage-v8@4.1.7)(jiti@2.7.0)(publint@0.3.21)(typescript@6.0.3)(unplugin-unused@0.5.7)(vite@8.0.14(@types/node@25.9.1)(jiti@2.7.0)(yaml@2.9.0))(yaml@2.9.0))':
     dependencies:
       vite-plus: 0.1.23(@arethetypeswrong/core@0.18.2)(@types/node@25.9.1)(@vitest/coverage-v8@4.1.7)(jiti@2.7.0)(publint@0.3.21)(typescript@6.0.3)(unplugin-unused@0.5.7)(vite@8.0.14(@types/node@25.9.1)(jiti@2.7.0)(yaml@2.9.0))(yaml@2.9.0)
 
@@ -1937,6 +1969,27 @@ snapshots:
       - unplugin-unused
       - vitest
 
+  '@bjmhe/viteplus-preset-pack@2.0.9(@arethetypeswrong/core@0.18.2)(@typescript/native-preview@7.0.0-dev.20260527.2)(publint@0.3.21)(typescript@6.0.3)(unplugin-unused@0.5.7)(vite-plus@0.1.23(@arethetypeswrong/core@0.18.2)(@types/node@25.9.1)(@vitest/coverage-v8@4.1.7)(jiti@2.7.0)(publint@0.3.21)(typescript@6.0.3)(unplugin-unused@0.5.7)(vite@8.0.14(@types/node@25.9.1)(jiti@2.7.0)(yaml@2.9.0))(yaml@2.9.0))(vitest@4.1.7)':
+    dependencies:
+      '@bjmhe/viteplus-preset': 1.0.9(@arethetypeswrong/core@0.18.2)(@typescript/native-preview@7.0.0-dev.20260527.2)(publint@0.3.21)(typescript@6.0.3)(unplugin-unused@0.5.7)(vite-plus@0.1.23(@arethetypeswrong/core@0.18.2)(@types/node@25.9.1)(@vitest/coverage-v8@4.1.7)(jiti@2.7.0)(publint@0.3.21)(typescript@6.0.3)(unplugin-unused@0.5.7)(vite@8.0.14(@types/node@25.9.1)(jiti@2.7.0)(yaml@2.9.0))(yaml@2.9.0))(vitest@4.1.7)
+      tsnapi: 0.3.3(vitest@4.1.7)
+      vite-plus: 0.1.23(@arethetypeswrong/core@0.18.2)(@types/node@25.9.1)(@vitest/coverage-v8@4.1.7)(jiti@2.7.0)(publint@0.3.21)(typescript@6.0.3)(unplugin-unused@0.5.7)(vite@8.0.14(@types/node@25.9.1)(jiti@2.7.0)(yaml@2.9.0))(yaml@2.9.0)
+    transitivePeerDependencies:
+      - '@arethetypeswrong/core'
+      - '@ts-macro/tsc'
+      - '@tsdown/css'
+      - '@tsdown/exe'
+      - '@typescript/native-preview'
+      - '@vitejs/devtools'
+      - oxc-resolver
+      - publint
+      - tsx
+      - typescript
+      - unplugin-unused
+      - unrun
+      - vitest
+      - vue-tsc
+
   '@bjmhe/viteplus-preset@1.0.7(@arethetypeswrong/core@0.18.2)(publint@0.3.21)(tsdown@0.22.1(@arethetypeswrong/core@0.18.2)(@typescript/native-preview@7.0.0-dev.20260527.2)(publint@0.3.21)(typescript@6.0.3)(unplugin-unused@0.5.7))(tsnapi@0.3.3(vitest@4.1.7))(unplugin-unused@0.5.7)(vite-plus@0.1.23(@arethetypeswrong/core@0.18.2)(@types/node@25.9.1)(@vitest/coverage-v8@4.1.7)(jiti@2.7.0)(publint@0.3.21)(typescript@6.0.3)(unplugin-unused@0.5.7)(vite@8.0.14(@types/node@25.9.1)(jiti@2.7.0)(yaml@2.9.0))(yaml@2.9.0))':
     dependencies:
       '@arethetypeswrong/core': 0.18.2
@@ -1945,6 +1998,29 @@ snapshots:
       tsnapi: 0.3.3(vitest@4.1.7)
       unplugin-unused: 0.5.7
       vite-plus: 0.1.23(@arethetypeswrong/core@0.18.2)(@types/node@25.9.1)(@vitest/coverage-v8@4.1.7)(jiti@2.7.0)(publint@0.3.21)(typescript@6.0.3)(unplugin-unused@0.5.7)(vite@8.0.14(@types/node@25.9.1)(jiti@2.7.0)(yaml@2.9.0))(yaml@2.9.0)
+
+  '@bjmhe/viteplus-preset@1.0.9(@arethetypeswrong/core@0.18.2)(@typescript/native-preview@7.0.0-dev.20260527.2)(publint@0.3.21)(typescript@6.0.3)(unplugin-unused@0.5.7)(vite-plus@0.1.23(@arethetypeswrong/core@0.18.2)(@types/node@25.9.1)(@vitest/coverage-v8@4.1.7)(jiti@2.7.0)(publint@0.3.21)(typescript@6.0.3)(unplugin-unused@0.5.7)(vite@8.0.14(@types/node@25.9.1)(jiti@2.7.0)(yaml@2.9.0))(yaml@2.9.0))(vitest@4.1.7)':
+    dependencies:
+      '@bjmhe/viteplus-preset-fmt': 0.0.3(vite-plus@0.1.23(@arethetypeswrong/core@0.18.2)(@types/node@25.9.1)(@vitest/coverage-v8@4.1.7)(jiti@2.7.0)(publint@0.3.21)(typescript@6.0.3)(unplugin-unused@0.5.7)(vite@8.0.14(@types/node@25.9.1)(jiti@2.7.0)(yaml@2.9.0))(yaml@2.9.0))
+      '@bjmhe/viteplus-preset-lint': 0.0.2(vite-plus@0.1.23(@arethetypeswrong/core@0.18.2)(@types/node@25.9.1)(@vitest/coverage-v8@4.1.7)(jiti@2.7.0)(publint@0.3.21)(typescript@6.0.3)(unplugin-unused@0.5.7)(vite@8.0.14(@types/node@25.9.1)(jiti@2.7.0)(yaml@2.9.0))(yaml@2.9.0))
+      '@bjmhe/viteplus-preset-pack': 2.0.5(@arethetypeswrong/core@0.18.2)(publint@0.3.21)(tsdown@0.22.1(@arethetypeswrong/core@0.18.2)(@typescript/native-preview@7.0.0-dev.20260527.2)(publint@0.3.21)(typescript@6.0.3)(unplugin-unused@0.5.7))(unplugin-unused@0.5.7)(vite-plus@0.1.23(@arethetypeswrong/core@0.18.2)(@types/node@25.9.1)(@vitest/coverage-v8@4.1.7)(jiti@2.7.0)(publint@0.3.21)(typescript@6.0.3)(unplugin-unused@0.5.7)(vite@8.0.14(@types/node@25.9.1)(jiti@2.7.0)(yaml@2.9.0))(yaml@2.9.0))(vitest@4.1.7)
+      tsdown: 0.22.1(@arethetypeswrong/core@0.18.2)(@typescript/native-preview@7.0.0-dev.20260527.2)(publint@0.3.21)(typescript@6.0.3)(unplugin-unused@0.5.7)
+      vite-plus: 0.1.23(@arethetypeswrong/core@0.18.2)(@types/node@25.9.1)(@vitest/coverage-v8@4.1.7)(jiti@2.7.0)(publint@0.3.21)(typescript@6.0.3)(unplugin-unused@0.5.7)(vite@8.0.14(@types/node@25.9.1)(jiti@2.7.0)(yaml@2.9.0))(yaml@2.9.0)
+    transitivePeerDependencies:
+      - '@arethetypeswrong/core'
+      - '@ts-macro/tsc'
+      - '@tsdown/css'
+      - '@tsdown/exe'
+      - '@typescript/native-preview'
+      - '@vitejs/devtools'
+      - oxc-resolver
+      - publint
+      - tsx
+      - typescript
+      - unplugin-unused
+      - unrun
+      - vitest
+      - vue-tsc
 
   '@braidai/lang@1.1.2': {}
 
